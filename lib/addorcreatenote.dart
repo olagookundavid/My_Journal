@@ -48,6 +48,11 @@ class AddOrUpdate extends StatelessWidget {
                     titleController.text,
                     descriptionController.text,
                   );
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Journal has been addded!'),
+                    ),
+                  );
                 }
 
                 if (id != null) {
@@ -55,6 +60,11 @@ class AddOrUpdate extends StatelessWidget {
                     id,
                     titleController.text,
                     descriptionController.text,
+                  );
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Journal Updated!'),
+                    ),
                   );
                 }
 
